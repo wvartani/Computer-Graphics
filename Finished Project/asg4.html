@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Blocky World</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> XXX </p>
+
+    <p>
+        <button type="button" id="normalOn">Normal On</button>
+        <button type="button" id="normalOff">Normal Off</button>
+    </p>
+
+    <h3>Camera Rotation</h3>
+
+    <p>
+        Camera Angle X <input type="range" min="-180" max="180" value="0" class="slider" id="angleXSlide">
+        Camera Angle Y <input type="range" min="-180" max="180" value="0" class="slider" id="angleYSlide">
+    </p>
+
+    <p>
+        Light X <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+        Light Y <input type="range" min="-250" max="250" value="100" class="slider" id="lightSlideY">
+        Light Z <input type="range" min="-250" max="250" value="-200" class="slider" id="lightSlideZ">
+    </p>
+
+    <p>
+        Red Light <input type="range" min="0" max="100" value="100" class="slider" id="redLightSlide">
+        Green Light <input type="range" min="0" max="100" value="100" class="slider" id="greenLightSlide">
+        Blue Light <input type="range" min="0" max="100" value="100" class="slider" id="blueLightSlide">
+    </p>
+
+    <p>
+        Light:
+        <button type="button" id="lightOn">ON</button>
+        <button type="button" id="lightOff">OFF</button>
+    </p>
+
+    <p>
+        Light Animation:
+        <button type="button" id="lightAnimationOnButton">ON</button>
+        <button type="button" id="lightAnimationOffButton">OFF</button>
+        <button type="button" id="lightAnimationResetButton">RESET</button>
+    </p>
+
+    <h1>Ted's Moon Adventure</h1>
+
+    <p>
+        Ted has been spontaneously teleported to the Moon. Help him explore!
+    </p>
+
+    <h3>Walk</h3>
+
+    <p>
+        Animation:
+        <button type="button" id="walkAnimationOnButton">ON</button>
+        <button type="button" id="walkAnimationOffButton">OFF</button>
+        <button type="button" id="walkAnimationResetButton">RESET</button>
+    </p>
+
+    <h3>Shift Click</h3>
+
+    <p>Shift + Click to surprise Ted</p>
+
+    <p>
+        Reset Shift Click Animation:
+        <button type="button" id="shiftClickAnimationResetButton">RESET</button>
+    </p>
+
+    <h3>Arms</h3>
+
+    <p>
+        Animation:
+        <button type="button" id="armAnimationOnButton">ON</button>
+        <button type="button" id="armAnimationOffButton">OFF</button>
+    </p>
+
+    <p>
+        Left Arm <input type="range" min="-45" max="45" value="0" class="slider" id="leftArmSlide">
+    </p>
+
+    <p>
+        Right Arm <input type="range" min="-45" max="45" value="0" class="slider" id="rightArmSlide">
+    </p>
+
+    <p>
+        Left Hand <input type="range" min="-45" max="45" value="0" class="slider" id="leftHandSlide">
+    </p>
+
+    <p>
+        Right Hand <input type="range" min="-45" max="45" value="0" class="slider" id="rightHandSlide">
+    </p>
+
+    <h3>Legs</h3>
+
+    <p>
+        Animation:
+        <button type="button" id="legAnimationOnButton">ON</button>
+        <button type="button" id="legAnimationOffButton">OFF</button>
+    </p>
+
+    <p>
+        Left Leg <input type="range" min="-45" max="45" value="0" class="slider" id="leftLegSlide">
+
+    </p>
+
+    <p>
+        Right Leg <input type="range" min="-45" max="45" value="0" class="slider" id="rightLegSlide">
+    </p>
+
+    <p>
+        Left Foot <input type="range" min="-45" max="45" value="0" class="slider" id="leftFootSlide">
+
+    </p>
+
+    <p>
+        Right Foot <input type="range" min="-45" max="45" value="0" class="slider" id="rightFootSlide">
+    </p>
+
+
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cylinder.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="asg4.js"></script>
+
+</body>
+
+</html>
