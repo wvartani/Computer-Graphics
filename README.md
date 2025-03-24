@@ -11,7 +11,7 @@ Project showcasing different concepts I've learned in computer graphics.
 7. This should take you to the project with the textures included
 
 ## Instructions if you run into issues with webserver.bat:
-1. 1. Navigate to https://github.com/wvartani/Computer-Graphics
+1. Navigate to https://github.com/wvartani/Computer-Graphics
 2. Click on the "Code" icon, then download the zip file
 3. After extracting the file, open the "Finished Project" file
 4. Then, open the "asg4.html" file
